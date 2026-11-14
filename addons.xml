@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <addons>
-  <addon id="script.streamselect.installer" name="StreamSelect Installer" version="1.2.2.1" provider-name="StreamSelect">
+  <addon id="script.streamselect.installer" name="StreamSelect Installer" version="1.2.2.2" provider-name="StreamSelect">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -9,9 +9,9 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="de_DE">StreamSelect installieren und einrichten</summary>
-      <description lang="de_DE">Installiert StreamSelect, TMDb Helper und StreamSelect Home. Für Kodi 21 Omega. Build 1.</description>
+      <description lang="de_DE">Installiert StreamSelect, TMDb Helper und StreamSelect Home. Für Kodi 21 Omega. Build 2.</description>
       <summary lang="en_GB">Install and configure StreamSelect</summary>
-      <description lang="en_GB">Installs StreamSelect, TMDb Helper and StreamSelect Home for Kodi 21 Omega. Build 1.</description>
+      <description lang="en_GB">Installs StreamSelect, TMDb Helper and StreamSelect Home for Kodi 21 Omega. Build 2.</description>
       <platform>all</platform>
       <license>GPL-3.0-or-later</license>
       <assets>

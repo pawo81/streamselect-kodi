@@ -1,6 +1,6 @@
 # StreamSelect für Kodi 21 Omega
 
-StreamSelect Installer 1.2.2 · Build 1 · StreamSelect Home 0.2.2
+StreamSelect Installer 1.2.2 · Build 2 · StreamSelect Home 0.2.3
 
 1. [StreamSelect Repository herunterladen](https://raw.githubusercontent.com/pawo81/streamselect-kodi/main/repository.streamselect-1.0.0.zip).
 2. Die Repository-ZIP in Kodi unter **Add-ons → Aus ZIP-Datei installieren** auswählen.
