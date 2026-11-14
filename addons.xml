@@ -20,4 +20,95 @@
       </assets>
     </extension>
   </addon>
+  <addon id="script.streamselect.home" name="StreamSelect Home Launcher" version="0.2.4" provider-name="StreamSelect Home">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="actions.py">
+      <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="de_DE">Aktionen für die StreamSelect-Oberfläche</summary>
+      <description lang="de_DE">Aktionen für die StreamSelect-Oberfläche</description>
+      <summary lang="en_GB">Search, library and shortcuts for StreamSelect Home</summary>
+      <description lang="en_GB">Search, library and shortcuts for StreamSelect Home</description>
+      <platform>all</platform>
+      <license>MIT</license>
+      <path>script.streamselect.home-0.2.4.zip</path>
+    </extension>
+  </addon>
+  <addon id="script.streamselect.skinhelper" name="StreamSelect Skin Helper" version="0.2.4" provider-name="StreamSelect Home / Ivar Brandt (Nimbus)">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0" />
+      <import addon="script.module.requests" version="2.19.1" />
+      <import addon="script.module.pil" version="1.1.7" />
+    </requires>
+    <extension point="xbmc.python.library" library="resources/lib/default.py" />
+    <extension point="xbmc.service" library="resources/lib/service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+      <news />
+      <platform>all</platform>
+      <license>GPL-2.0-only</license>
+      <forum />
+      <source />
+      <assets>
+        <icon>resources/media/icon.png</icon>
+        <fanart>resources/media/fanart.jpg</fanart>
+      </assets>
+      <summary lang="en_GB">Supporting features for StreamSelect Home</summary>
+      <description lang="en_GB">Supporting features for StreamSelect Home</description>
+      <summary lang="de_DE">Hilfsfunktionen für die StreamSelect-Oberfläche</summary>
+      <source>https://github.com/ivarbrandt/script.nimbus.helper</source>
+      <path>script.streamselect.skinhelper-0.2.4.zip</path>
+    </extension>
+  </addon>
+  <addon id="skin.streamselect.home" version="0.2.4" name="StreamSelect Home" provider-name="StreamSelect Home / Ivar Brandt (Nimbus)">
+    <requires>
+      <import addon="xbmc.gui" version="5.17.0" />
+      <import addon="script.streamselect.skinhelper" version="0.2.4" />
+      <import addon="script.streamselect.home" version="0.2.4" />
+    </requires>
+    <extension point="xbmc.gui.skin" debugging="false">
+      <res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+      <res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+      <res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+      <res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+      <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+      <res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+      <res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+      <res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+      <assets>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.png</fanart>
+      </assets>
+      <summary lang="en_GB">Nimbus-based Kodi interface</summary>
+      <description lang="en_GB">Nimbus-based Kodi interface</description>
+      <summary lang="de_DE">Kodi-Oberfläche auf Nimbus-Basis</summary>
+      <source>https://github.com/ivarbrandt/skin.nimbus</source>
+      <path>skin.streamselect.home-0.2.4.zip</path>
+    </extension>
+  </addon>
+  <addon id="repository.streamselect" name="StreamSelect Repository" version="1.0.2" provider-name="StreamSelect">
+    <requires>
+      <import addon="xbmc.addon" version="21.0.0" />
+    </requires>
+    <extension point="xbmc.addon.repository" name="StreamSelect">
+      <dir minversion="21.0.0">
+        <info>https://raw.githubusercontent.com/pawo81/streamselect-kodi/main/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/pawo81/streamselect-kodi/main/addons.xml.sha256</checksum>
+        <datadir>https://raw.githubusercontent.com/pawo81/streamselect-kodi/main/</datadir>
+        <hashes>false</hashes>
+      </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="de_DE">StreamSelect für Kodi</summary>
+      <description lang="de_DE">Repository für StreamSelect Installer mit StreamSelect Home.</description>
+      <platform>all</platform>
+      <path>repository.streamselect-1.0.2.zip</path>
+    </extension>
+  </addon>
 </addons>
