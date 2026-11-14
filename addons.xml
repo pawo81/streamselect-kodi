@@ -62,7 +62,7 @@
       <path>script.streamselect.skinhelper-0.2.4.zip</path>
     </extension>
   </addon>
-  <addon id="skin.streamselect.home" version="0.2.4" name="StreamSelect Home" provider-name="StreamSelect Home / Ivar Brandt (Nimbus)">
+  <addon id="skin.streamselect.home" version="0.2.5" name="StreamSelect Home" provider-name="StreamSelect Home / Ivar Brandt (Nimbus)">
     <requires>
       <import addon="xbmc.gui" version="5.17.0" />
       <import addon="script.streamselect.skinhelper" version="0.2.4" />
@@ -89,7 +89,7 @@
       <description lang="en_GB">Nimbus-based Kodi interface</description>
       <summary lang="de_DE">Kodi-Oberfläche auf Nimbus-Basis</summary>
       <source>https://github.com/ivarbrandt/skin.nimbus</source>
-      <path>skin.streamselect.home-0.2.4.zip</path>
+      <path>skin.streamselect.home-0.2.5.zip</path>
     </extension>
   </addon>
   <addon id="repository.streamselect" name="StreamSelect Repository" version="1.0.2" provider-name="StreamSelect">
