@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <addons>
-  <addon id="script.streamselect.installer" name="StreamSelect Installer" version="1.2.2.2" provider-name="StreamSelect">
+  <addon id="script.streamselect.installer" name="StreamSelect Installer" version="1.2.2.9" provider-name="StreamSelect">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -9,9 +9,9 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="de_DE">StreamSelect installieren und einrichten</summary>
-      <description lang="de_DE">Installiert StreamSelect, TMDb Helper und StreamSelect Home. Für Kodi 21 Omega. Build 2.</description>
+      <description lang="de_DE">Eigenständige StreamSelect-Home-Vorschau für Kodi 21.</description>
       <summary lang="en_GB">Install and configure StreamSelect</summary>
-      <description lang="en_GB">Installs StreamSelect, TMDb Helper and StreamSelect Home for Kodi 21 Omega. Build 2.</description>
+      <description lang="en_GB">Independent StreamSelect Home preview for Kodi 21.</description>
       <platform>all</platform>
       <license>GPL-3.0-or-later</license>
       <assets>
@@ -20,7 +20,7 @@
       </assets>
     </extension>
   </addon>
-  <addon id="script.streamselect.home" name="StreamSelect Home Launcher" version="0.2.4" provider-name="StreamSelect Home">
+  <addon id="script.streamselect.home" name="StreamSelect Home Launcher" version="0.2.8" provider-name="StreamSelect Home">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -34,7 +34,6 @@
       <description lang="en_GB">Search, library and shortcuts for StreamSelect Home</description>
       <platform>all</platform>
       <license>MIT</license>
-      <path>script.streamselect.home-0.2.4.zip</path>
     </extension>
   </addon>
   <addon id="script.streamselect.skinhelper" name="StreamSelect Skin Helper" version="0.2.4" provider-name="StreamSelect Home / Ivar Brandt (Nimbus)">
@@ -109,6 +108,21 @@
       <description lang="de_DE">Repository für StreamSelect Installer mit StreamSelect Home.</description>
       <platform>all</platform>
       <path>repository.streamselect-1.0.2.zip</path>
+    </extension>
+  </addon>
+  <addon id="skin.streamselect" version="0.1.1" name="StreamSelect Home (Vorschau)" provider-name="StreamSelect">
+    <requires>
+      <import addon="xbmc.gui" version="5.17.0" />
+      <import addon="script.streamselect.home" version="0.2.8" />
+    </requires>
+    <extension point="xbmc.gui.skin">
+      <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+      <res width="2560" height="1080" aspect="21:9" default="false" folder="xml-wide" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="de_DE">Eigenständige StreamSelect-Oberfläche für Kodi 21</summary>
+      <description lang="de_DE">Vorschau mit Filmen, Serien, Suche, Video-Add-ons und PIN-Bereich.</description>
+      <platform>all</platform>
     </extension>
   </addon>
 </addons>
