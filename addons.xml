@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <addons>
-  <addon id="script.streamselect.installer" name="StreamSelect Installer" version="1.2.2.9" provider-name="StreamSelect">
+  <addon id="script.streamselect.installer" name="StreamSelect Installer" version="1.2.2.10" provider-name="StreamSelect">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -9,9 +9,9 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="de_DE">StreamSelect installieren und einrichten</summary>
-      <description lang="de_DE">Eigenständige StreamSelect-Home-Vorschau für Kodi 21.</description>
+      <description lang="de_DE">Installiert StreamSelect, TMDb Helper und StreamSelect Home für Kodi 21.</description>
       <summary lang="en_GB">Install and configure StreamSelect</summary>
-      <description lang="en_GB">Independent StreamSelect Home preview for Kodi 21.</description>
+      <description lang="en_GB">Installs StreamSelect, TMDb Helper and StreamSelect Home for Kodi 21.</description>
       <platform>all</platform>
       <license>GPL-3.0-or-later</license>
       <assets>
@@ -110,7 +110,7 @@
       <path>repository.streamselect-1.0.2.zip</path>
     </extension>
   </addon>
-  <addon id="skin.streamselect" version="0.1.1" name="StreamSelect Home (Vorschau)" provider-name="StreamSelect">
+  <addon id="skin.streamselect" version="1.0.0" name="StreamSelect" provider-name="StreamSelect">
     <requires>
       <import addon="xbmc.gui" version="5.17.0" />
       <import addon="script.streamselect.home" version="0.2.8" />
@@ -121,7 +121,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="de_DE">Eigenständige StreamSelect-Oberfläche für Kodi 21</summary>
-      <description lang="de_DE">Vorschau mit Filmen, Serien, Suche, Video-Add-ons und PIN-Bereich.</description>
+      <description lang="de_DE">Startseite mit Filmen, Serien, Suche, Video-Add-ons und PIN-Bereich.</description>
       <platform>all</platform>
     </extension>
   </addon>
